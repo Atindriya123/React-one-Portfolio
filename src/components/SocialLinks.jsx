@@ -9,7 +9,8 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <br/><FaLinkedin size={30} />
+          LinkedIn <br />
+          <FaLinkedin size={30} />
         </>
       ),
       href: "https://linkedin.com",
@@ -23,18 +24,15 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://github.com/Atindriya123",
-     
     },
     {
       id: 3,
       child: (
         <>
-         E-Mail <HiOutlineMail size={30} />
+          E-Mail <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:atindriyamondal1@gmail.com",
-    
-  
     },
     {
       id: 4,
@@ -43,7 +41,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "  /atin cv.docx", // Provide the actual URL for the resume
+      href: "  /atincv.docx", // Provide the actual URL for the resume
       style: "rounded-br-md",
       download: true,
     },
@@ -51,22 +49,26 @@ const SocialLinks = () => {
 
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed px-0 ">
-      <ul >
+      <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
-              `flex justify-between items-center w-40 h-14 px-2 p-4 flex-col  text-base md:text-lg lg:text-xl  ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-30 bg-gray-500 ` + style}
+              `flex justify-between items-center w-40 h-14 px-2 p-4 flex-col  text-base md:text-lg lg:text-xl  ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-30 bg-gray-500 ` +
+              style
+            }
           >
             <a
               href={href} // Provide the href attribute with the actual URL
               className="flex justify-between items-center text-white p-0 gap-5"
               download={download}
               target="_blank"
-               rel= "noreferrer"
-               onClick={()=>{download}}
+              rel="noreferrer"
+              onClick={() => {
+                download;
+              }}
             >
-            {child}
+              {child}
             </a>
           </li>
         ))}
