@@ -41,7 +41,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "  /atincv.docx", // Provide the actual URL for the resume
+      href: "https://drive.google.com/file/d/1kjxQrpTomTwMoC5_nNPZqy2AHgk44x2D/view?usp=sharing", // Provide the actual URL for the resume
       style: "rounded-br-md",
       download: true,
     },
