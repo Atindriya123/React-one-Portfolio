@@ -43,7 +43,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "atin cv.docx", // Provide the actual URL for the resume
+      href: "  /atin cv.docx", // Provide the actual URL for the resume
       style: "rounded-br-md",
       download: true,
     },
@@ -64,6 +64,7 @@ const SocialLinks = () => {
               download={download}
               target="_blank"
                rel= "noreferrer"
+               onClick={()=>{download}}
             >
             {child}
             </a>

@@ -9,7 +9,7 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "home",
+      link: "Home",
     },
     {
       id: 2,
@@ -17,11 +17,11 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "Portfolio",
     },
     {
       id: 4,
-      link: "contact",
+      link: "Contact",
     },
     {
       id: 5,
@@ -54,6 +54,7 @@ const Navbar = () => {
       </ul>
       <div
         onClick={() => setnav(!nav)}
+        
         className="cursor-pointer pr-4 
         z-10 text-gray-500 md:hidden"
       >
@@ -73,7 +74,7 @@ const Navbar = () => {
           >
             <Link
             onClick={()=>setnav(!nav)}
-            to={link} smooth 
+            to={link}  smooth 
             duration={500}
             
             >
