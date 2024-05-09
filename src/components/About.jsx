@@ -3,10 +3,10 @@ import React from "react";
 const About = () => {
   return (
     <div
-      className="relative w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className=" w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white"
       name="about"
     >
-      <div className="relative z-10 p-4 mx-auto flex flex-col justify-center h-full max-w-screen-md">
+      <div className=" z-10 p-4 mx-auto flex flex-col justify-center h-full max-w-screen-md">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
