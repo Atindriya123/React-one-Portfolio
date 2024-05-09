@@ -3,20 +3,16 @@ import React from "react";
 const About = () => {
   return (
     <div
-      className="w-full h-screen bg-gradient-to-b 
-    from-gray-800 to-black text-white"
+      className="relative w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white"
       name="about"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="relative z-10 p-4 mx-auto flex flex-col justify-center h-full max-w-screen-md">
         <div className="pb-8">
-          <p
-            className="text-4xl font-bold inline border-b-4
-          border-gray-500"
-          >
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
-        <p className="text-xl text-white ">
+        <p className="text-base md:text-xl">
           "Passionate about crafting seamless web experiences, I specialize in
           developing dynamic applications using cutting-edge technologies like
           React, Tailwind CSS, Next.js, and MongoDB. With a keen eye for detail
@@ -36,10 +32,10 @@ const About = () => {
           contribute meaningfully to every stage of development. With a strong
           foundation in modern web development practices, I am constantly
           refining my skills and exploring new technologies to push the
-          boundaries of what's possible.
+          boundaries of what's possible."
         </p>
         <br />
-        <p className="text-xl">
+        <p className="text-base md:text-xl">
           Driven by a passion for problem-solving and a love for clean,
           efficient code, I am committed to creating web applications that not
           only meet but exceed expectations. Whether it's a sleek e-commerce
