@@ -8,7 +8,7 @@ import Redux from "../assets/redux.png";
 import HTML from "../assets/html.png";
 import Nodejs from "../assets/nodejs.png";
 import ReactJS from "../assets/react2.png";
-import Express from "../assets/express.png"
+import Express from "../assets/express.png";
 
 const Experience = () => {
   const techs = [
@@ -95,15 +95,12 @@ const Experience = () => {
             These are the technologies I've worked with
           </p>
         </div>
-        <div
-          className="w-full grid grid-cols-2 m-6 sm:grid-cols-3
-        gap-8  py-8 px-12 sm:px-0"
-        >
+        <div className="grid grid-cols-2 m-6 sm:grid-cols-3 gap-8  py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
-            key={id}
+              key={id}
               className={`shadow-md  flex flex-col justify-center items-center hover:scale-105 duration-300
-            py-4 rounded-lg ${style}` }
+            py-4 rounded-lg ${style}`}
             >
               <img
                 src={src}
